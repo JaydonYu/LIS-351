@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An accessible introduction to Formula 1 practice, qualifying, race day, and racing strategy.">
+  <title>F1 Race Weekend Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header and navigation (A3 content, A4 classes) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="F1 Race Weekend Guide home">
+        F1<span class="dot">.</span><span class="brand-name">Race Weekend Guide</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#weekend">Race Weekend</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#learn">Learn More</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <p class="hero-eyebrow">The beginner's guide to race weekends</p>
+        <h1 id="hero-title">Experience the World of Formula 1</h1>
+        <p class="hero-subhead">
+          A simple guide to understanding practice, qualifying, race day,
+          and the strategy behind an F1 weekend.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#weekend">Explore the Race Weekend</a>
+          <a class="btn btn-outline" href="#strategy">Understand Strategy</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three feature cards -->
+    <section class="features" id="weekend" aria-labelledby="weekend-title">
+      <div class="container">
+        <div class="features-intro">
+          <h2 class="section-title" id="weekend-title">Understanding an F1 Race Weekend</h2>
+          <p class="section-lede">From practice laps to the checkered flag, every session plays a different role.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature">
+            <div class="icon" aria-hidden="true">01</div>
+            <h3>Practice</h3>
+            <p>Practice sessions allow teams and drivers to learn the circuit, test car setups, and prepare for qualifying and the race.</p>
+          </article>
+          <article class="feature">
+            <div class="icon" aria-hidden="true">02</div>
+            <h3>Qualifying</h3>
+            <p>Qualifying determines the starting order for the race. Drivers compete for the fastest lap and the best possible position on the starting grid.</p>
+          </article>
+          <article class="feature">
+            <div class="icon" aria-hidden="true">03</div>
+            <h3>Race Day</h3>
+            <p>Race day combines speed, consistency, tire management, pit stops, and strategy as drivers compete to reach the finish first.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured explanation + image -->
+    <section class="featured" id="strategy" aria-labelledby="strategy-title">
+      <div class="container">
+        <h2 class="section-title" id="strategy-title">More Than Just Speed</h2>
+        <p class="section-lede">
+          Formula 1 is not only about driving as fast as possible. Teams must constantly
+          make decisions about tire choice, pit-stop timing, weather conditions,
+          traffic, and race strategy. A small decision can change the final result.
+        </p>
+        <figure class="media">
+          <img
+            src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/PitStop.JPG/1280px-PitStop.JPG"
+            alt="Ferrari Formula 1 car and crew during a pit stop"
+            loading="lazy">
+          <figcaption>On track and in the pit lane, timing is part of the competition.</figcaption>
+        </figure>
+        <div class="featured-details">
+          <p>Understanding these strategic decisions makes watching Formula 1 much more interesting.
+             Instead of only following which car is in front, viewers can also watch
+             how teams react to changing conditions throughout the race.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secondary content / two cards -->
+    <section class="secondary" aria-labelledby="concepts-title">
+      <div class="container">
+        <h2 class="section-title" id="concepts-title">Important Race Concepts</h2>
+        <div class="secondary-grid">
+          <article class="card">
+            <div class="card-text">
+              <h3>Tires and Pit Stops</h3>
+              <p>Formula 1 cars use different tire compounds for different conditions.
+                 Teams must decide when to change tires and which compound to use,
+                 making pit-stop strategy an important part of the race.</p>
+              <h4>Common Race Factors</h4>
+              <ul class="factor-list">
+                <li>Tire wear</li>
+                <li>Track temperature</li>
+                <li>Weather conditions</li>
+                <li>Traffic on the circuit</li>
+                <li>Pit-stop timing</li>
+              </ul>
+            </div>
+            <div class="card-image img-a" role="img" aria-label="A Ferrari team working on a Formula 1 car in the pit lane"></div>
+          </article>
+
+          <article class="card">
+            <div class="card-text">
+              <h3>Flags and Race Control</h3>
+              <p>Flags communicate important information to drivers during a race.
+                 Yellow flags warn drivers about danger on the track, while a red flag
+                 can stop a session when conditions are unsafe.</p>
+              <p>Race control also manages safety procedures and communicates important
+                 instructions when incidents or changing track conditions affect a session.</p>
+            </div>
+            <div class="card-image img-b" role="img" aria-label="Formula 1 car driving on a racing circuit"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta" id="learn" aria-labelledby="learn-title">
+      <div class="container cta-inner">
+        <p class="section-eyebrow">Keep exploring</p>
+        <h2 id="learn-title">Ready to Watch Your Next Race?</h2>
+        <p>Now that you know the basics, explore Formula 1 and experience a race weekend for yourself.</p>
+        <a class="btn btn-outline" href="https://www.formula1.com/" target="_blank" rel="noopener noreferrer">
+          Visit the Official Formula 1 Website ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>F1 Race Weekend Guide</strong>
+        <p>&copy; 2026 F1 Race Weekend Guide. An introductory student website.</p>
+        <p class="photo-credit">
+          Photography: <a href="https://commons.wikimedia.org/wiki/File:Zhou_Guanyu_on_track,_Singapore_Grand_Prix_2024.jpg" target="_blank" rel="noopener noreferrer">Henrikkoh333</a>
+          (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>)
+          and <a href="https://commons.wikimedia.org/wiki/File:PitStop.JPG" target="_blank" rel="noopener noreferrer">Eliminatore / Motor Show</a>
+          (<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>).
+          Photos are cropped for layout.
+        </p>
+      </div>
+      <div class="footer-cols">
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>Explore</h4>
+          <a href="#home">Return to Home</a>
+          <a href="#weekend">Race Weekends</a>
+          <a href="#strategy">F1 Strategy</a>
+        </nav>
+        <div class="footer-col">
+          <h4>Learn More</h4>
+          <a href="#learn">Keep Exploring</a>
+          <a href="https://www.formula1.com/" target="_blank" rel="noopener noreferrer">Formula1.com ↗</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
