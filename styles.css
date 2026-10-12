@@ -1,0 +1,479 @@
+/* a4stylesheet.css
+   A4: Intro CSS Fill-in Template
+   Instructions: rename this file to styles.css and complete each TODO block.
+*/
+
+
+
+
+
+/* ===== Base styles (mostly done) ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.site-header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.header-inner {
+  /* Completed A */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.brand .dot {
+  /* Completed B */
+  color: #318dad;
+}
+
+.site-nav a {
+  margin-left: 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #444;
+}
+
+
+
+
+
+
+/* ===== Hero ===== */
+.hero {
+  /* Completed C */
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  background-color: #e7f0f5;
+  background-image:
+    linear-gradient(90deg, rgba(248, 252, 255, 0.97) 0%, rgba(248, 252, 255, 0.91) 48%, rgba(248, 252, 255, 0.28) 100%),
+    url("https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Zhou_Guanyu_on_track%2C_Singapore_Grand_Prix_2024.jpg/1280px-Zhou_Guanyu_on_track%2C_Singapore_Grand_Prix_2024.jpg");
+  background-size: cover;
+  background-position: center;
+  /* My image:
+     https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=60
+  */
+}
+
+.hero-content {
+  /* Completed D */
+  text-align: left;
+  padding: 88px 0 94px;
+}
+
+.hero h1 {
+  margin: 0;
+  /* Completed E */
+  font-size: clamp(34px, 5vw, 48px);
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  max-width: 660px;
+}
+
+.hero-subhead {
+  margin: 6px 0 22px;
+  /* Completed F */
+  font-size: clamp(18px, 2.2vw, 22px);
+  color: #4f626e;
+  max-width: 610px;
+}
+
+
+
+
+
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.btn-dark {
+  /* Completed G */
+  background: #1e303d;
+  color: #fff;
+  border: 2px solid #1e303d;
+}
+
+.btn-outline {
+  /* Completed H */
+  border: 2px solid #318dad;
+  color: #267c9a;
+  background: transparent;
+}
+
+/* ===== Features (3 columns) ===== */
+.features {
+  padding: 42px 0;
+}
+
+.features-grid {
+  /* Completed I */
+  display: flex;
+  align-items: stretch;
+  gap: 26px;
+}
+
+.feature {
+  /* Completed J */
+  flex: 1;
+  text-align: center;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #ddd;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+  color: #666;
+  font-size: 22px;
+}
+
+/* ===== Featured content ===== */
+.featured {
+  padding: 42px 0 36px;
+  background: #f7f7f7;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-lede {
+  text-align: center;
+  max-width: 680px;
+  margin: 10px auto 22px;
+  color: #666;
+  font-size: 13px;
+}
+
+.media {
+  background: #eaeaea;
+  border: 1px solid #ddd;
+  height: 260px;
+  display: grid;
+  place-items: center;
+}
+
+
+
+
+
+
+/* ===== Secondary content (2 cards) ===== */
+.secondary {
+  padding: 34px 0 44px;
+}
+
+.secondary-grid {
+  /* Completed K */
+  display: flex;
+  align-items: stretch;
+  gap: 26px;
+}
+
+.card {
+  /* Completed L */
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #e1e8ed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-text {
+  padding: 18px;
+}
+
+.card-text h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card-text p {
+  margin: 0 0 14px;
+  color: #666;
+  font-size: 13px;
+}
+
+.card-image {
+  min-height: 160px;
+  /* Completed M */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Optional images (already provided) */
+.img-a {
+  background-image: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=60");
+}
+.img-b {
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=60");
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: #f7f7f7;
+  padding: 42px 0;
+}
+
+.cta-inner {
+  /* Completed N */
+  text-align: center;
+}
+
+
+
+
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  padding: 24px 0;
+}
+
+.footer-inner {
+  /* Completed O */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-left {
+  max-width: 360px;
+  color: #666;
+  font-size: 12px;
+}
+
+.footer-left a { color: #3a88a8; }
+
+.footer-cols {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-col h4 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0;
+}
+
+/* ===== Page refinements (responsive, accessibility, and F1 theme) ===== */
+html { scroll-behavior: smooth; }
+body { color: #17252e; }
+section[id] { scroll-margin-top: 72px; }
+a:focus-visible { outline: 3px solid #318dad; outline-offset: 4px; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  z-index: 10;
+  background: #fff;
+  padding: 8px 12px;
+}
+.skip-link:focus { left: 8px; }
+
+.site-header { position: relative; z-index: 1; }
+.header-inner { min-height: 82px; }
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  white-space: nowrap;
+  line-height: 1;
+}
+.brand .dot { font-size: 30px; }
+.brand-name {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+}
+.site-nav { display: flex; flex-wrap: wrap; gap: 8px 0; }
+.site-nav a { margin-left: 22px; }
+.site-nav a:hover, .footer-col a:hover { color: #267c9a; }
+
+.hero-content { width: min(1000px, 92%); }
+.hero-eyebrow, .section-eyebrow {
+  margin: 0 0 14px;
+  color: #267c9a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+.hero h1 { color: #132936; }
+.hero-subhead { line-height: 1.55; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  font-weight: 700;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.btn-dark:hover {
+  background: #318dad; border-color: #318dad; color: #fff;
+  text-decoration: none;
+}
+.btn-outline:hover {
+  background: #318dad; color: #fff; text-decoration: none;
+}
+.btn:focus-visible { outline-offset: 4px; }
+
+.features { padding: 62px 0 70px; }
+.features-intro { margin-bottom: 34px; }
+.feature {
+  padding: 26px 22px 22px;
+  border: 1px solid #e7ebee;
+  border-radius: 8px;
+  background: #fff;
+}
+.feature .icon { color: #267c9a; border-color: #bddeea; background: #f0f8fb; font-size: 18px; font-weight: 800; }
+.feature h3 { margin: 0 0 10px; font-size: 19px; }
+.feature p { margin: 0; font-size: 14px; color: #53616b; }
+.section-title { font-size: 22px; letter-spacing: 0.035em; }
+.section-lede { max-width: 740px; font-size: 15px; line-height: 1.65; }
+
+.featured { padding: 62px 0 64px; }
+.featured .section-lede { margin-bottom: 26px; }
+.media {
+  position: relative;
+  overflow: hidden;
+  height: 360px;
+  background: #1c333e;
+  border: none;
+  border-radius: 8px;
+  place-items: stretch;
+}
+.media img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 47%; }
+.media figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 42px 22px 18px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  background: linear-gradient(transparent, rgba(10, 27, 38, 0.82));
+}
+.featured-details {
+  margin: 24px auto 0;
+  max-width: 760px;
+  font-size: 14px;
+  color: #50606c;
+  text-align: center;
+}
+.featured-details p { margin: 0 0 10px; }
+
+.secondary { padding: 60px 0 70px; }
+.secondary .section-title { margin-bottom: 30px; }
+.card {
+  grid-template-columns: 1.15fr 0.85fr;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+.card-text { padding: 22px; }
+.card-text h3 { font-size: 15px; line-height: 1.45; }
+.card-text p { line-height: 1.6; }
+.card-text h4 { margin: 12px 0 8px; font-size: 13px; }
+.factor-list { margin: 0; padding-left: 18px; color: #56636d; font-size: 12px; line-height: 1.55; }
+.card-image { background-color: #284a5a; min-height: 250px; }
+.img-a {
+  background-image: url("https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/PitStop.JPG/1280px-PitStop.JPG");
+}
+.img-b {
+  background-image: url("https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Zhou_Guanyu_on_track%2C_Singapore_Grand_Prix_2024.jpg/1280px-Zhou_Guanyu_on_track%2C_Singapore_Grand_Prix_2024.jpg");
+  background-position: 62% center;
+}
+
+.cta { padding: 58px 0 64px; }
+.cta-inner { max-width: 760px; }
+.cta-inner h2 { margin: 0 0 12px; font-size: 26px; }
+.cta-inner p { margin: 0 auto 20px; color: #546470; }
+
+.site-footer { padding: 36px 0; }
+.footer-left { max-width: 400px; }
+.footer-left strong { display: block; font-size: 14px; color: #1e303d; margin-bottom: 10px; }
+.footer-left p { margin: 0 0 10px; }
+.footer-col { min-width: 145px; }
+.photo-credit { max-width: 420px; font-size: 11px; color: #697983; }
+.photo-credit a { text-decoration: underline; }
+
+@media (max-width: 830px) {
+  .header-inner { flex-direction: column; align-items: flex-start; justify-content: center; padding: 18px 0; }
+  .site-nav a { margin: 0 20px 0 0; }
+  .hero { background-position: 66% center; }
+  .hero-content { padding: 68px 0; }
+  .features-grid, .secondary-grid { flex-direction: column; }
+  .feature { width: 100%; }
+  .secondary-grid { max-width: 720px; margin: 0 auto; }
+  .footer-inner { flex-wrap: wrap; }
+  .footer-cols { flex-wrap: wrap; }
+}
+@media (max-width: 540px) {
+  .brand { font-size: 23px; }
+  .brand-name { font-size: 12px; }
+  .hero { min-height: 380px; }
+  .hero-content { padding: 60px 0; }
+  .hero { background-image: linear-gradient(rgba(248,252,255,0.94),rgba(248,252,255,0.87)),
+    url("https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Zhou_Guanyu_on_track%2C_Singapore_Grand_Prix_2024.jpg/1280px-Zhou_Guanyu_on_track%2C_Singapore_Grand_Prix_2024.jpg"); }
+  .hero h1 { font-size: 34px; }
+  .feature { padding: 22px; }
+  .card { grid-template-columns: 1fr; }
+  .card-image { min-height: 190px; }
+  .media { height: 245px; }
+  .site-nav a { font-size: 11px; }
+  .footer-cols { gap: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+}
